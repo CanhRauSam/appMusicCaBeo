@@ -89,7 +89,6 @@ mainAudio.addEventListener('timeupdate', function (e) {
     const duration = e.target.duration;
     let progressWidth = (currentTime / duration) * 100;
     progressBar.style.width = `${progressWidth}%`;
-    console.log(duration)
 
     let musicCurrentTime = wrapper.querySelector('.current-time');
     let musicDurationTime = wrapper.querySelector('.max-duration');
@@ -164,7 +163,7 @@ mainAudio.addEventListener('ended', function () {
             musicIndex = randIndex;
             loadMusic(musicIndex);
             playMusic();
-            playingSong();
+            // playingSong(); // Thêm vào sẽ treo trình duyệt
             break;
     }
 });
@@ -204,6 +203,7 @@ for (let i = 0; i < lengthSongs; i++) {
         liAudioDurationTag.setAttribute('t-duration', `${totalMin}: ${totalSec}`);
     });
 };
+
 function playingSong() {
     const allLiTag = ulTag.querySelectorAll('li');
 
