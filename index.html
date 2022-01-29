@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="#">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script> -->
+    <link rel="stylesheet" href="./asset/scss/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <i class="material-icons">expand_more</i>
+            <span>Now playing</span>
+            <i class="material-icons">more_horiz</i>
+        </div>
+
+        <div class="img-area">
+            <!-- ./asset/img/anhkhongthathu.jpg -->
+            <img src="./asset/img/anhkhongthathu.jpg" alt="">
+        </div>
+
+        <div class="song-details">
+            <p class="name"></p>
+            <p class="atrist"></p>
+        </div>
+
+        <div class="progress-area">
+            <div class="progress-bar">
+                <audio src="" id="main-audio"></audio>
+            </div>
+
+            <div class="song-timer">
+                <span class="current-time">0:00</span>
+                <span class="max-duration">0:00</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <i id="repeat-list" class="material-icons" title="Playlist looped">repeat</i>
+            <i id="prev" class="material-icons">skip_previous</i>
+
+            <div class="play-pause">
+                <i class="material-icons">play_arrow</i>
+            </div>
+
+            <i id="next" class="material-icons">skip_next</i>
+            <i id="more-music" class="material-icons">queue_music</i>
+        </div>
+
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i class="list material-icons">queue_music</i>
+                    <span>Music List</span>
+                </div>
+                <i id="close" class="list material-icons">close</i>
+            </div>
+            <ul>
+                <!-- Nơi để chứa bài hát được render ra từ Js -->
+            </ul>
+        </div>
+    </div>
+
+
+    <script type="module" src="./asset/js/main.js"></script>
+</body>
+
+</html>
