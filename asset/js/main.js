@@ -163,7 +163,7 @@ mainAudio.addEventListener('ended', function () {
             musicIndex = randIndex;
             loadMusic(musicIndex);
             playMusic();
-            // playingSong(); // Thêm vào sẽ treo trình duyệt
+            playingSong();
             break;
     }
 });
